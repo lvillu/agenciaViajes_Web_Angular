@@ -1,0 +1,6 @@
+<div>
+    <input [(ngModel)]="user" placeholder="Usuario" />
+    <input [(ngModel)]="password" type="password" placeholder="Contraseña" />
+    <button (click)="login()">Iniciar sesión</button>
+    <p *ngIf="errorMessage">{{ errorMessage }}</p>
+</div>
